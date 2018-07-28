@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,5 +25,10 @@ public class MainActivity extends AppCompatActivity {
         Log.i("Name", nameEditText.getText().toString());
         Log.i("Password", passwordEditText.getText().toString());
         Toast.makeText(this, "Hello " + nameEditText.getText().toString() + " !!" , Toast.LENGTH_SHORT).show();
+    }
+
+    public void switchImage(View view) {
+        ImageView image = (ImageView) findViewById(R.id.myImageView);
+        image.setImageResource(R.drawable.rajinikanth_new);
     }
 }
